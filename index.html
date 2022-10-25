@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Expense Tracker</title>
+</head>
+<body>
+<div class="forminputs">
+  <header>Money on the Mind</header>
+  <form id="expenseTracker">
+
+    <label for"question">Type:</label>
+      <select id="type">
+        <option value="card">Card</option>
+        <option value="cash">Cash</option>
+        <option value="cryptoCoin">Cryptocoin</option>
+        <option value="other">Other</option>
+      </select>
+
+    <label for="expense">Expense:</label>
+    <input type="text" name="expense" id="expense">
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" id="date">
+
+    <label for="amount">Amount:</label>
+    <input type="number" name="amount" id="amount">
+  </form>
+</div>
+<input type="submit" id="AddNewExpense" value="Submit" onclick="addRow()">
+<div class="expenseTable">
+  <table id="my-table">
+
+    <tr>
+    <th id="currencyout">Type</th>
+    <th id="expenseout">Expense</th>
+    <th id="dateout">Date</th>
+    <th id="amountout">Amount</th>
+    <th id="delete">Delete</th>
+    </tr>
+    <tr>
+    <td type="output" class="output1"></td>
+    <td type="output" class="output2"></td>
+    <td type="output" class="output3"></td>
+    <td type="output" class="output4"></td>
+    <td type="output" class="output5"></td>
+    </td>
+    </tr>
+  </table>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
